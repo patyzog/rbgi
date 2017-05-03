@@ -1,4 +1,4 @@
-function show_hide_mediainfo() {
+function Xshow_hide_mediainfo() {
 	$('#mediainfo_container').toggle();
 	if($('#a_show_hide_mediainfo').text() == "[+] Show MediaInfo") {
 		$('#a_show_hide_mediainfo').text('[-] Hide MediaInfo');
@@ -8,13 +8,13 @@ function show_hide_mediainfo() {
 }
 
 
-function ShowHide(id,id1) {
+function XShowHide(id,id1) {
 	$("#"+id+"").toggle();
 	$("#"+id1+"").toggle();
 }
 
 
-function populateNFO(url) {
+function XpopulateNFO(url) {
 	if($("#populateNFO").html() == "---") {
 		$("#populateNFO").empty().html('<img src="//dyncdn.me/static/20/img/loading.gif" border="0" />');
 		$.get(url, function(data) {
